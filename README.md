@@ -1,2 +1,2 @@
 # sprate
-the application to view sprite sheet animation.
+The application to play sprite sheet animation.
