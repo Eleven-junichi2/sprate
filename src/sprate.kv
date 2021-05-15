@@ -27,13 +27,23 @@
                 size_hint_x: None
                 width: self.texture_size[0] * 1.2
             Button:
+                text: "Settings"
+                size_hint_x: None
+                width: self.texture_size[0] * 1.2
+            Button:
                 text: "License"
                 size_hint_x: None
                 width: self.texture_size[0] * 1.2
-        FloatLayout:
+        Widget:
+            size_hint_y: .5
+        BoxLayout:
             orientation: "horizontal"
-            pos_hint: {'x': .3, 'y': .6}
-            size_hint: .5, .2
+            size_hint_y: .1
             Button:
                 text: ">"
-            
+                size_hint_x: None
+                width: self.height
+            Label:
+                text: "Animation direction"
+            Label:
+                text: "start frame from:"      
