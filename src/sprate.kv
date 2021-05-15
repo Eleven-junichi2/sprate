@@ -1,0 +1,39 @@
+#:kivy 2.0.0
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+<EditorScreen>:
+    canvas.before:
+        Color:
+            rgba: get_color_from_hex("#2E2E2E")
+        Rectangle:
+            pos: root.pos
+            size: root.size
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            canvas.before:
+                Color:
+                    rgba: get_color_from_hex("#5D5D5D")
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            orientation: "horizontal"
+            size_hint_y: None
+            height: 40
+            padding: 4, 4
+            spacing: 4
+            Button:
+                text: "Open File"
+                size_hint_x: None
+                width: self.texture_size[0] * 1.2
+            Button:
+                text: "License"
+                size_hint_x: None
+                width: self.texture_size[0] * 1.2
+        FloatLayout:
+            orientation: "horizontal"
+            pos_hint: {'x': .3, 'y': .6}
+            size_hint: .5, .2
+            Button:
+                text: ">"
+            

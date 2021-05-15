@@ -18,4 +18,4 @@ class SprateApp(App):
 
 
 if __name__ == "__main__":
-    pass
+    SprateApp().run()
